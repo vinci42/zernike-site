@@ -27,7 +27,15 @@ nav a {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 140px 20px;
+
+    height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
 }
 
 /* CARDS */
@@ -228,5 +236,54 @@ color:#555;
 .section-title{
 text-align: center;
 margin-bottom:40px;
+}
+
+.sectores-aplicacion {
+max-width: 1000px;
+margin: auto;
+padding: 40px 20px;
+}
+
+.sectores-aplicacion h3 {
+margin-top: 30px;
+}
+
+.sector-img {
+width: 100%;
+max-width: 700px;
+height: 350px;
+object-fit: cover;
+display: block;
+margin: 20px auto;
+}
+
+/* MENU A CASCATA */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, #0b3c5d, #00a8a8);
+    min-width: 260px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
