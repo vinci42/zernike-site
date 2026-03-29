@@ -527,6 +527,15 @@ margin:10px 0;
 
 }
 
+.producto-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.producto-card a{
+    margin-top:auto;
+}
 .boton{
 
 display:inline-block;
@@ -542,4 +551,128 @@ border-radius:4px;
 
 background:#00a8a8;
 
+}
+
+/* SEZIONI PAGINA PRODOTTO */
+
+.producto-descripcion,
+.producto-caracteristicas,
+.producto-beneficios {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* TITOLI SEZIONI */
+
+.producto-descripcion h2,
+.producto-caracteristicas h2,
+.producto-beneficios h2 {
+    color: #0b3c5d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00a8a8;
+    padding-bottom: 5px;
+}
+
+/* TESTO */
+
+.producto-descripcion p,
+.producto-beneficios p {
+    margin-bottom: 15px;
+}
+
+/* LISTE */
+
+.producto-descripcion ul,
+.producto-caracteristicas ul,
+.producto-beneficios ul {
+    margin-left: 20px;
+}
+
+.producto-descripcion li,
+.producto-caracteristicas li,
+.producto-beneficios li {
+    margin-bottom: 8px;
+}
+
+.hero {
+
+height:420px;
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+position:relative;
+
+animation: cambioFondo 20s infinite;
+}
+
+/* overlay blu trasparente */
+
+.hero-overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+rgba(11,60,93,0.7),
+rgba(0,168,168,0.6)
+);
+
+}
+
+/* testo */
+
+.hero-content{
+
+position:relative;
+z-index:2;
+
+}
+
+.hero h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+@keyframes cambioFondo {
+
+0%{
+background-image:url("immagini/fotohome.png");
+}
+
+33%{
+background-image:url("immagini/parej-richard.jpg");
+}
+
+66%{
+background-image:url("immagini/chuttersnap.jpg");
+}
+
+100%{
+background-image:url("immagini/crystal-kwok.jpg");
+}
+
+}
+
+header{
+position:relative;
+z-index:1000;
 }
