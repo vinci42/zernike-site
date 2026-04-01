@@ -676,3 +676,16 @@ header{
 position:relative;
 z-index:1000;
 }
+
+.producto-card img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:white;
+padding:10px;
+}
+.producto-card{
+max-width:320px;
+margin:auto;
+padding:20px;
+}
